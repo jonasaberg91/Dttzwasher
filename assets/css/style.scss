@@ -1,2 +1,24 @@
+@import 'reset'; // normalize
+
 html, body {
+	font-family: 'lato', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 16px;
+}
+
+header {
+	background: red;
+	padding: 16px;
+}
+
+.form-item {
+	.error-message {
+		display: none; // this will be done in js
+	}
 }
