@@ -1,6 +1,7 @@
 @import 'reset'; // normalize
 
 html, body {
+	background: #EDEFF0;
 	font-family: 'lato', sans-serif;
 	margin: 0;
 	padding: 0;
@@ -12,9 +13,96 @@ html, body {
 	padding: 0 16px;
 }
 
+// fonts
+h1 {
+    font-size: 250%;
+}
+
+h2 {
+    font-size: 200%;
+}
+
+p {
+    font-size: 100%;
+    margin-top: 16px;
+}
+
+input,
+textarea,
+button {
+  outline: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input,
+textarea {
+  background: white;
+  border: 2px solid black;
+  color: #384047;
+  display: block;
+  font-size: 1em;
+  line-height: 2em;
+  padding: 10px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+input:hover,
+textarea:hover {
+}
+input:focus,
+textarea:focus {
+}
+
+.btn {
+	width: 100%;
+	padding: 16px;
+	margin-top: 16px;
+	font-size: 100%;
+	background: lightgreen;
+	border: 0;
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+.test {
+	background: #eee;
+	padding: 6px 8px;
+	color: #333;
+	border-radius: 2px;
+	text-decoration: none;
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+section {
+	padding: 16px;
+}
+
 header {
 	background: red;
 	padding: 16px;
+}
+
+.box {
+	background: #fff;
+	border-radius: 4px;
+	margin: 16px 0;
+	p {
+		&:first-child {
+			margin-top: 10px;
+		}
+	}
 }
 
 .form-item {
@@ -22,3 +110,8 @@ header {
 		display: none; // this will be done in js
 	}
 }
+
+
+
+
+
