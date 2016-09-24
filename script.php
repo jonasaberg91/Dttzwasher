@@ -21,13 +21,13 @@
         return $data;
     }
     
-    $query = "INSERT into DW (Date,Name) VALUES('" . $date . "','" . $name . "')";
+    $query = "INSERT into inputs (Date,Name) VALUES('" . $date . "','" . $name . "')";
     $success = $dbcon->query($query);
     
     if(!$success){
         die ("Could not enter data " . $dbcon->error);
     }else{
-        header("Location: http://rasmusandersson.com/dishwasher.php");
+        header("Location: http://127.0.0.1/Dttzwasher");
         exit; 
     }
     $dbcon->close();
