@@ -30,7 +30,7 @@
     require 'connect.php'; //use code in connect.php to connect to mysql db
     $dbcon = connect();
     
-    $query1 = "SELECT Date, Name FROM DW";
+    $query1 = "SELECT Date, Name FROM inputs";
     $result = $dbcon->query($query1);
     echo "<br>Date: " . " / " . "Name:<br>";
     if($result -> num_rows > 0){

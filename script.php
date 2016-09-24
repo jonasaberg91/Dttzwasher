@@ -1,9 +1,9 @@
 <?php
     function connect(){
-    $dbhost = 'rasmusandersson.com.mysql';
-    $dbuser = 'rasmusandersson_com';
-    $dbname = 'rasmusandersson_com';
-    $dbpass = 'AvyC5DJh';
+    $dbhost = 'localhost';
+    $dbuser = 'root';
+    $dbname = 'dttzwasher';
+    $dbpass = '';
     
     $dbcon = new mysqli ($dbhost, $dbuser, $dbpass, $dbname);
     return ($dbcon);
