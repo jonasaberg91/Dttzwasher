@@ -7,7 +7,13 @@ html, body {
 	padding: 0;
 }
 
-.wrapper {
+#wrapper {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 16px;
+}
+
+.container {
 	max-width: 1280px;
 	margin: 0 auto;
 	padding: 0 16px;
@@ -24,6 +30,7 @@ h2 {
 
 p {
     font-size: 100%;
+    font-weight: 300;
     margin-top: 16px;
 }
 
@@ -44,7 +51,7 @@ button {
 input,
 textarea {
   background: white;
-  border: 2px solid black;
+  border: 2px solid #1B1D1C;
   color: #384047;
   display: block;
   font-size: 1em;
@@ -67,19 +74,22 @@ textarea:focus {
 	padding: 16px;
 	margin-top: 16px;
 	font-size: 100%;
-	background: lightgreen;
+	font-weight: 400;
+	background: #32B67A;
 	border: 0;
+	color: #fff;
 	&:hover {
 		opacity: 0.8;
 	}
 }
 
-.test {
+.btn-secondary {
 	background: #eee;
 	padding: 6px 8px;
 	color: #333;
 	border-radius: 2px;
 	text-decoration: none;
+	font-weight: 400;
 	&:hover {
 		opacity: 0.8;
 	}
@@ -90,8 +100,19 @@ section {
 }
 
 header {
-	background: red;
+	background: #005397;
+	color: #fff;
 	padding: 16px;
+	h1 {
+		font-size: 125%;
+		font-weight: 300;
+		&:after {
+				content: '';
+			@media only screen and (min-width : 768px) {
+				content: ' Dttzwasher - The ultimate relationship wreckage package';
+			}
+		}
+	}
 }
 
 .box {
