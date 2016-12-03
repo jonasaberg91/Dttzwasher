@@ -72,6 +72,9 @@ p {
   font-weight: 300;
   margin-top: 16px; }
 
+strong {
+  font-weight: 700; }
+
 input,
 textarea,
 button {
